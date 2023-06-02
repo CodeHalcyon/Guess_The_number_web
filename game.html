@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        width: 30px;
+        padding: 0;
+        margin-top: 30px;
+        text-align: center;
+      }
+      #again-btn{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Game page</h1>
+    <div class="score"><strong>Score: </strong><span id="score"></span></div>
+    <input type="number" id="guess" min="0" max="100" value="0" />
+    <button onclick="MakeGuess()" id="guess-btn">Make this Guess</button>
+    <button onclick="PlayAgain()" id="again-btn">Play Again</button>
+    <div id="txt"></div>
+    <script src="game.js"></script>
+  </body>
+</html>
